@@ -1,0 +1,24 @@
+{
+  "name": "pmstats",
+  "version": "0.0.1a",
+  "description": "PMMP Statistics server backend API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "PocketMine",
+    "Minecraft",
+    "PMMP",
+    "MCPE",
+    "Statistics"
+  ],
+  "author": "CortexPE",
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql2": "^1.6.5",
+    "sequelize": "^4.42.0"
+  }
+}
