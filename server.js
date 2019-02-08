@@ -188,8 +188,8 @@ app.post("/api/post", function (req, res) {
             break;
         case "close":
             Servers.update({
-                online: true,
-                crashed: false,
+                online: false,
+                crashed: data.crashing,
             }, {
                 where: {
                     uniqueServerId: data.uniqueServerId
@@ -208,8 +208,8 @@ app.post("/api/post", function (req, res) {
                 totalMemory: data.system.totalMemory,
                 availableMemory: data.system.availableMemory,
                 threadCount: data.system.threadCount,
-                online: false,
-                crashed: data.crashing,
+                online: true,
+                crashed: false,
             }, {
                 where: {
                     uniqueServerId: data.uniqueServerId
